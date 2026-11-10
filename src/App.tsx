@@ -1,9 +1,10 @@
 import { useState, type CSSProperties } from 'react'
-import { services, spots, contacts, fmt, TG } from './data'
+import { services, spots, contacts, fmt, TG, MAP } from './data'
 import './styles.css'
 
 const PATHS = {
   tg: 'M21 4L3 11l6 2 2 6 3-4 5 4 2-15z',
+  pin: 'M12 21s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11zM12 12a2.5 2.5 0 100-5 2.5 2.5 0 000 5z',
   ch: 'M4 5h16v11H8l-4 4V5z',
   doc: 'M6 3h8l4 4v14H6V3zM14 3v4h4',
   tel: 'M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z',
@@ -62,8 +63,8 @@ export default function App() {
             <a className="pill" href={TG} target="_blank" rel="noopener">
               <Icon k="tg" /> Telegram
             </a>
-            <a className="pill" href="#xizmatlar">
-              Narxlar
+            <a className="pill" href={MAP} target="_blank" rel="noopener noreferrer">
+              <Icon k="pin" /> Lokatsiya
             </a>
           </nav>
 

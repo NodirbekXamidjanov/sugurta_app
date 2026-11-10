@@ -1,4 +1,5 @@
 export const TG = 'https://t.me/Sharofutdinov_Nodirjon'
+export const MAP = 'https://www.google.com/maps?q=40.385210,69.255085&ll=40.385210,69.255085&z=16'
 
 export type Service = { title: string; short: string; price?: string }
 
@@ -9,7 +10,7 @@ export const services: Service[] = [
   { title: 'Litsenziya', short: 'Litsenziya', price: "500,000" },
   { title: 'Jarima balini oʻtkazish', short: 'Jarima balli', price: "130,000" },
   { title: 'Tonirovka ruxsatnomasi', short: 'Tonirovka', price: "3,300,000" },
-  { title: 'Qayta jihoz ruxsatnomalari', short: 'Qayta jihoz', price: "350,000"},
+  { title: 'Qayta jihoz ruxsatnomalari', short: 'Qayta jihoz', price: "350,000" },
   { title: 'Yagona darcha xizmatlari', short: 'Yagona darcha' },
 ]
 
